@@ -4,30 +4,30 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
     <body>
-        <header>
+        <header class="header">
             <div class="logo">
-                <h2>Loco</h2>
+                <h2 class="logo__title">Loco</h2>
             </div>
             <div class="lang">
-                <select name="lang">
+                <select class="select__lang" name="lang">
                     <option value="ru">ru</option>
                     <option value="eng">en</option>
                 </select>
             </div>
             <div class="menu">
-                <button class="burger"></button>
+                <button class="menu__burger"></button>
             </div>
         </header>
         <main>
             <section class="top">
                 <div class="container">
-                    <img src="image/pete-bellis.jpg" alt="сумка">
-                    <div class="top__aside">
-                        <h1>Новая коллекция</h1>
-                        <p>Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018.
+                    <img class="img" src="image/pete-bellis.jpg" alt="сумка">
+                    <div class="proposals">
+                        <h1 class="proposals__title">Новая коллекция</h1>
+                        <p class="proposals__title">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018.
                             Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не
                             суммируется с другими акциями, предложениями и распродажей.</p>
-                        <div class="btn-wrap">
+                        <div class="proposals__wrap">
                             <button class="btn">Читать дальше</button>
                             <a class="link--other" href="">Другие предложения</a>
                         </div>
@@ -35,39 +35,41 @@
                 </div>
                 <div class="top__bottom">
                     <div class="social">
-                        <a href="" class="link"></a>
-                        <a href="" class="link"></a>
-                        <a href="" class="link"></a>
+                        <a href="" class="social__link"></a>
+                        <a href="" class="social__link"></a>
+                        <a href="" class="social__link"></a>
                     </div>
-                    <div class="scroll"><img src="image/scroll.svg" alt=""></div>
+                    <div class="scroll">
+                        <img class="scroll__img" src="image/scroll.svg" alt="">
+                    </div>
                 </div>
             </section>
             <section>
                 <div class="container">
-                    <img src="image/section_2.png" alt="">
+                    <img class="img" src="image/section_2.png" alt="">
                     <div class="wrap">
                         <div class="product">
-                            <h2>Кожаный клатч</h2>
-                            <h3>Осенняя колекция</h3>
-                            <p>Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до
+                            <h2 class="product__title">Кожаный клатч</h2>
+                            <h3 class="product__title--bottom">Осенняя колекция</h3>
+                            <p class="product__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до
                                 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В
                                 магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
                             <div class="product__wrap">
-                                <div class="product__color">
-                                    <input type="radio">
-                                    <input type="radio">
-                                    <input type="radio">
-                                    <input type="radio">
+                                <div class="color">
+                                    <input class="color__input" type="radio">
+                                    <input class="color__input" type="radio">
+                                    <input class="color__input" type="radio">
+                                    <input class="color__input" type="radio">
                                 </div>
                                 <div class="product__price">
                                     1990₽
                                 </div>
                             </div>
                             <div class="product__wrap">
-                                <div class="product__selector">
-                                    <button></button>
-                                    <input type="number">
-                                    <button></button>
+                                <div class="selector">
+                                    <button class="btn selector__btn"></button>
+                                    <input class="product__selector__input" type="number">
+                                    <button class="btn selector__btn"></button>
                                 </div>
                                 <button class="btn">Добавить в корзину</button>
                             </div>
@@ -78,17 +80,17 @@
             </section>
             <section>
                 <div class="container">
-                    <img src="image/section_3.jpg" alt="">
+                    <img class="img" src="image/section_3.jpg" alt="">
                     <div class="wrap">
                         <div class="product product--rose">
-                            <h2>Serene Total Look</h2>
-                            <h3>Осенняя колекция</h3>
-                            <p>Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка.</p>
+                            <h2 class="product__title">Serene Total Look</h2>
+                            <h3 class="product__title--bottom">Осенняя колекция</h3>
+                            <p class="product__text">Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка.</p>
                             <div class="product__wrap">
-                                <div class="product__selector">
-                                    <button></button>
-                                    <input type="number">
-                                    <button></button>
+                                <div class="selector">
+                                    <button class="btn selector__btn"></button>
+                                    <input class="product__selector__input" type="number">
+                                    <button class="btn selector__btn"></button>
                                 </div>
                                 <button class="btn">Добавить в корзину</button>
                             </div>
@@ -98,9 +100,9 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="developed">
-                <p>Разработано в </p> <img src="/image/whs.svg" alt="whs">
+                <p class="developed__text">Разработано в </p> <img src="/image/whs.svg" alt="whs">
             </div>
         </footer>
     </body>
