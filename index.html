@@ -7,17 +7,19 @@
 </head>
     <body>
         <header class="header">
-            <div class="logo">
-                <h2 class="logo__title">Loco</h2>
-            </div>
-            <div class="lang">
-                <select class="select__lang" name="lang">
-                    <option value="ru">ru</option>
-                    <option value="eng">en</option>
-                </select>
-            </div>
-            <div class="menu">
-                <button class="menu__burger"></button>
+            <div class="header__wrap">
+                <div class="logo">
+                    <h2 class="logo__title">Loco</h2>
+                    <div class="select">
+                        <select name="lang">
+                            <option value="ru">ru</option>
+                            <option value="eng">en</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="menu__burger"></button>
+                </div>
             </div>
         </header>
         <main>
@@ -26,20 +28,29 @@
                     <img class="img" src="image/pete-bellis.jpg" alt="сумка">
                     <div class="proposals">
                         <h1 class="proposals__title">Новая коллекция</h1>
-                        <p class="proposals__title">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018.
+                        <p class="proposals__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018.
                             Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не
                             суммируется с другими акциями, предложениями и распродажей.</p>
                         <div class="proposals__wrap">
                             <button class="btn">Читать дальше</button>
-                            <a class="link--other" href="">Другие предложения</a>
+                            <a class="link link--other link--small" href="">
+                                <span class="link__text">Другие предложения</span>
+                                <img class="link__arrow" src="image/arrow1.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="top__bottom">
                     <div class="social">
-                        <a href="" class="social__link"></a>
-                        <a href="" class="social__link"></a>
-                        <a href="" class="social__link"></a>
+                        <a href="" class="social__link">
+                            <img src="image/vk.svg" alt="">
+                        </a>
+                        <a href="" class="social__link">
+                            <img src="image/inst.svg" alt="">
+                        </a>
+                        <a href="" class="social__link">
+                            <img src="image/fb.svg" alt="">
+                        </a>
                     </div>
                     <div class="scroll">
                         <img class="scroll__img" src="image/scroll.svg" alt="">
@@ -76,7 +87,7 @@
                                 <button class="btn">Добавить в корзину</button>
                             </div>
                         </div>
-                        <a class="link--other" href="">Другие предложения</a>
+                        <a class="link link--other" href="">Другие предложения</a>
                     </div>
                 </div>
             </section>
@@ -97,7 +108,7 @@
                                 <button class="btn">Добавить в корзину</button>
                             </div>
                         </div>
-                        <a class="link--other" href="">Другие предложения</a>
+                        <a class="link link--other" href="">Другие предложения</a>
                     </div>
                 </div>
             </section>

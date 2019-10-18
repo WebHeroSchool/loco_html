@@ -1,56 +1,69 @@
-@charset "UTF-8";
 html {
-  font: 15px 'montserratregular', sans-serif; }
+  font: 15px 'montserratregular', sans-serif;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 h1 {
-  font-family: "montserratbold"; }
+  font-family: "montserratbold";
+}
 
 .btn {
   padding: 14px 45px;
   border: 1px solid black;
   font-size: 13px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .link {
   text-decoration: none;
   color: black;
-  text-transform: uppercase; }
-  .link--other {
+  text-transform: uppercase;
+  &--other {
     font-size: 13px;
     display: flex;
-    align-items: center; }
-  .link__text {
-    margin-right: 19px; }
+    align-items: center;
+  }
+  &__text{
+    margin-right: 19px;
+  }
+}
 
 .header {
   position: relative;
   width: 100%;
   display: inline-block;
-  margin-bottom: 100px; }
-  .header__wrap {
+  margin-bottom: 100px;
+
+  &__wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    align-items: center; }
+    align-items: center;
+  }
+}
 
 .logo {
   width: 460px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  .logo__title {
+  align-items: center;
+
+  &__title {
     text-transform: uppercase;
     font-size: 30px;
     padding: 0 52px;
-    color: white; }
+    color: white;
+  }
+}
 
 .select {
-  position: relative; }
-  .select select {
+  position: relative;
+
+  select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -60,10 +73,14 @@ h1 {
     text-transform: uppercase;
     line-height: 24px;
     padding-right: 40px;
-    color: white; }
-  .select option {
-    font-size: 16px; }
-  .select:before {
+    color: white;
+  }
+
+  option {
+    font-size: 16px;
+  }
+
+  &:before {
     content: "▼";
     padding: 0 8px;
     font-size: 12px;
@@ -76,23 +93,27 @@ h1 {
     width: 10%;
     height: 100%;
     pointer-events: none;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+  }
+}
 
 .menu {
   position: absolute;
   right: 0;
   height: 92px;
   width: 92px;
-  z-index: 1; }
-  .menu__burger {
+  z-index: 1;
+
+  &__burger {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.06);
-    border: none; }
-    .menu__burger:after {
+    border: none;
+
+    &:after {
       content: "";
       position: absolute;
       width: 34px;
@@ -100,8 +121,10 @@ h1 {
       height: 3px;
       left: 50%;
       margin-left: -17px;
-      background-color: black; }
-    .menu__burger:before {
+      background-color: black;
+    }
+
+    &:before {
       content: "";
       position: absolute;
       width: 34px;
@@ -109,29 +132,39 @@ h1 {
       top: 40px;
       left: 50%;
       margin-left: -17px;
-      background-color: black; }
+      background-color: black;
+    }
+  }
+}
 
 .top {
   width: 100%;
-  position: relative; }
-  .top .container {
-    padding: 57px 0; }
-  .top:before {
+  position: relative;
+  .container {
+    padding: 57px 0;
+  }
+
+  &:before {
     content: "";
     position: absolute;
     width: 460px;
     height: calc(100% + 100px);
     background-color: black;
     z-index: -1;
-    top: -100px; }
-  .top__bottom {
+    top: -100px;
+  }
+
+  &__bottom {
     display: flex;
     width: 52%;
     padding: 24px 0;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
+}
 
 .scroll {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .container {
   display: flex;
@@ -139,29 +172,37 @@ h1 {
   margin: 0 auto;
   align-items: center;
   max-width: 1090px;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .proposals {
   display: flex;
   flex-direction: column;
-  width: 485px; }
-  .proposals__wrap {
+  width: 485px;
+  &__wrap{
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-  .proposals__title {
+    align-items: center;
+  }
+  &__title {
     font-size: 80px;
     margin: 0;
     font-weight: bold;
     line-height: 81px;
-    padding: 26px 0; }
-  .proposals__text {
+    padding: 26px 0;
+  }
+  &__text {
     padding: 0 10px;
     margin: 0 0 36px 0;
-    line-height: 21px; }
+    line-height: 21px;
+  }
+}
 
 .social {
   display: flex;
-  padding: 0 52px; }
-  .social__link {
-    margin-right: 10px; }
+  padding: 0 52px;
+
+  &__link {
+    margin-right: 10px;
+  }
+}
