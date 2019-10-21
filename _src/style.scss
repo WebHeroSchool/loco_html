@@ -362,6 +362,9 @@ h1,h2,h3 {
   }
 }
 @media (max-width: 1024px) {
+  .header{
+    margin-bottom: 92px;
+  }
   .img {
     max-width: 100%;
   }
@@ -385,6 +388,7 @@ h1,h2,h3 {
   }
   .proposals {
     width: 100%;
+    padding: 50px;
   }
   .logo {
     width: 460px;
@@ -442,7 +446,7 @@ h1,h2,h3 {
     flex-direction: column;
     width: 100%;
     position: relative;
-
+    padding: 0;
     &__wrap {
       display: none;
     }
