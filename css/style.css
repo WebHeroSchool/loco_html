@@ -298,8 +298,10 @@ h1, h2, h3 {
 @media (max-width: 1024px) {
   .header {
     margin-bottom: 92px; }
+  .pic-img {
+    width: 100%; }
   .img {
-    max-width: 100%; }
+    width: 100%; }
   .container {
     padding: 0;
     flex-flow: row wrap; }
