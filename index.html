@@ -25,7 +25,10 @@
         <main>
             <section class="top">
                 <div class="container">
-                    <img class="img" srcset="image/pete-bellis-mobile.jpg 768w, image/pete-bellis.jpg" src="image/pete-bellis.jpg" alt="сумка">
+                    <picture class="pic-img">
+                        <source srcset="image/pete-bellis-mobile.jpg" media="(max-width:767px)">
+                        <img class="img"   src="image/pete-bellis.jpg">
+                    </picture>
                     <div class="proposals">
                         <h1 class="proposals__title">Новая коллекция</h1>
                         <div class="arrow-mobile">
@@ -62,7 +65,10 @@
             </section>
             <section class="middle">
                 <div class="container">
-                    <img class="img" srcset="image/section_2.png 768w, image/section_2-desctop.png" src="image/pete-bellis.jpg" alt="сумка">
+                    <picture class="pic-img">
+                        <source srcset="image/section_2.png" media="(max-width:767px)">
+                        <img class="img"   src="image/section_2-desctop.png">
+                    </picture>
                     <div class="product-wrap">
                         <div class="product">
                             <h2 class="product__title">Кожаный клатч</h2>
@@ -127,7 +133,7 @@
                             </div>
                         </div>
                         <a class="link link--other link--small" href="">
-                            <span class="link__text">Другие товырф на Loco.com</span>
+                            <span class="link__text">Другие товары на Loco.com</span>
                             <img class="link__arrow" src="image/arrow3.svg" alt="">
                         </a>
                     </div>
